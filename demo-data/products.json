@@ -1,0 +1,21 @@
+{
+  "products": [
+    {"id": "SKU001", "name": "无线蓝牙耳机 Pro", "category": "数码电子", "price": 299, "cost": 180, "supplier": "深圳声学科技"},
+    {"id": "SKU002", "name": "智能手表 S3", "category": "数码电子", "price": 899, "cost": 520, "supplier": "杭州智能硬件"},
+    {"id": "SKU003", "name": "便携充电宝 20000mAh", "category": "数码电子", "price": 129, "cost": 65, "supplier": "东莞电源科技"},
+    {"id": "SKU004", "name": "机械键盘 RGB 青轴", "category": "电脑外设", "price": 459, "cost": 280, "supplier": "深圳外设制造"},
+    {"id": "SKU005", "name": "电竞鼠标 无线 16000DPI", "category": "电脑外设", "price": 249, "cost": 130, "supplier": "深圳外设制造"},
+    {"id": "SKU006", "name": "USB-C 扩展坞 7合1", "category": "电脑外设", "price": 199, "cost": 100, "supplier": "东莞数码科技"},
+    {"id": "SKU007", "name": "瑜伽垫 加厚防滑 6mm", "category": "运动户外", "price": 89, "cost": 40, "supplier": "义乌体育用品"},
+    {"id": "SKU008", "name": "运动水壶 不锈钢 750ml", "category": "运动户外", "price": 69, "cost": 30, "supplier": "永康杯业"},
+    {"id": "SKU009", "name": "空气炸锅 5L 智能定时", "category": "家用电器", "price": 399, "cost": 220, "supplier": "佛山家电制造"},
+    {"id": "SKU010", "name": "扫地机器人 LDS激光导航", "category": "家用电器", "price": 1599, "cost": 900, "supplier": "苏州机器人科技"}
+  ],
+  "channels": ["淘宝", "京东", "拼多多", "抖音", "微信小程序"],
+  "regions": ["华东", "华南", "华北", "西南", "华中"],
+  "competitors": [
+    {"name": "竞品A", "description": "头部电商平台自营品牌"},
+    {"name": "竞品B", "description": "同品类天猫旗舰店"},
+    {"name": "竞品C", "description": "拼多多百亿补贴商家"}
+  ]
+}

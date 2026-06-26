@@ -1,0 +1,33 @@
+{
+  "alert_templates": {
+    "gmv_drop": {
+      "P0": "🚨 [P0·紧急] GMV 严重下滑告警\n━━━━━━━━━━━━━━━━\n⏰ 时间: {timestamp}\n📉 GMV 偏离: {deviation_pct}%\n💰 当前值: ¥{current_value}\n🎯 预期值: ¥{expected_value}\n🔍 可能原因: {possible_causes}\n💡 建议: {recommendation}\n━━━━━━━━━━━━━━━━\n⚠️ 请立即排查支付链路和系统状态",
+      "P1": "⚠️ [P1·警告] GMV 异常波动\n时间: {timestamp}\n偏离: {deviation_pct}%\n当前: ¥{current_value} / 预期: ¥{expected_value}\n建议: {recommendation}",
+      "P2": "ℹ️ [P2·提示] GMV 轻微波动\n时间: {timestamp}\n偏离: {deviation_pct}%\n已记录，持续观察中"
+    },
+    "low_stock": {
+      "P0": "🔴 [缺货告警] {product_name} 库存仅剩 {quantity} 件！建议立即补货",
+      "P1": "🟡 [库存预警] {product_name} 库存偏低 ({quantity} 件)，请关注补货",
+      "P2": "🔵 [库存提醒] {product_name} 库存 {quantity} 件，建议合理安排补货计划"
+    },
+    "traffic_drop": {
+      "P1": "📊 [流量异常] UV 较同期下降 {deviation_pct}%\n当前 UV: {current_uv}\n建议检查推广渠道和SEO状态",
+      "P2": "📊 [流量波动] UV 小幅下降 {deviation_pct}%，持续观察"
+    }
+  },
+  "notification_channels": {
+    "feishu": {
+      "webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/{your-hook-id}",
+      "enabled": false
+    },
+    "dingtalk": {
+      "webhook_url": "https://oapi.dingtalk.com/robot/send?access_token={your-token}",
+      "enabled": false
+    },
+    "email": {
+      "smtp_host": "smtp.example.com",
+      "recipients": ["ops@example.com"],
+      "enabled": false
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "description": "竞品价格基线数据（用于异常检测对比）",
+  "updated": "2026-06-17",
+  "products": {
+    "SKU001": {"competitor_prices": {"竞品A": 319, "竞品B": 289, "竞品C": 259}, "our_price": 299, "price_position": "中等偏下"},
+    "SKU002": {"competitor_prices": {"竞品A": 999, "竞品B": 879, "竞品C": 849}, "our_price": 899, "price_position": "中等"},
+    "SKU004": {"competitor_prices": {"竞品A": 499, "竞品B": 449, "竞品C": 429}, "our_price": 459, "price_position": "中等"},
+    "SKU009": {"competitor_prices": {"竞品A": 429, "竞品B": 389, "竞品C": 369}, "our_price": 399, "price_position": "中等偏上"},
+    "SKU010": {"competitor_prices": {"竞品A": 1799, "竞品B": 1599, "竞品C": 1499}, "our_price": 1599, "price_position": "中等"}
+  }
+}
