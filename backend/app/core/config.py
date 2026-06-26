@@ -96,7 +96,7 @@ class Settings(BaseSettings):
     VECTOR_DIM: int = 384
 
     # CORS
-    CORS_ORIGINS: list[str] = ["http://localhost:5173", "http://localhost:3000"]
+    CORS_ORIGINS: list[str] = ["*"]
 
     # ── V3.0: A2A Multi-Agent ──────────────────────────────────────
     A2A_ENABLED: bool = True
