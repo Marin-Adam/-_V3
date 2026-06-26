@@ -28,6 +28,18 @@ set HAS_NODE=0
 node --version >nul 2>&1 && set HAS_NODE=1
 if %HAS_NODE%==1 (echo [OK] Node.js found) else (echo [WARN] Node.js not found, no frontend)
 
+:: ── Check .env ─────────────────────────────────────────────────
+if not exist "backend\.env" (
+    echo.
+    echo [WARN] backend\.env not found!
+    echo        Copy backend\.env.example to backend\.env:
+    echo        copy backend\.env.example backend\.env
+    echo        Then edit it to add your API key ^(optional^)
+    echo.
+    echo        The app will use defaults for now...
+    echo.
+)
+
 :: ── Stop old services ──────────────────────────────────────────
 echo.
 echo [STOP] Killing old processes...
